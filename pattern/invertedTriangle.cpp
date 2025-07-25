@@ -4,7 +4,7 @@ int main()
 
 {
   int n = 4;
-  int i=1;
+  int i=n;
   while (i<=n)
   {
     int j=1;
@@ -13,13 +13,13 @@ int main()
       if (j<=i)
       {
         cout<<"* ";
-        j++;
+        j--;
       }
-      else {j++;}
+      else {j--;}
       
     }
     cout<<endl;
-    i++;
+    i--;
     
   }
   

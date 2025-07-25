@@ -3,14 +3,27 @@ using namespace std;
 int main()
 
 {
-  int n = 5;
-  for (int i = 1; i <= n; i++)
+  int n = 4;
+  // for (int i = 1; i <= n; i++)
+  // {
+  //   for (int j = 1; j <= n; j++)
+  //   {
+  //     cout << "* ";
+  //   }
+  //   cout << endl;
+  // }
+  int i=1;
+  while (i<=n)
   {
-    for (int j = 1; j <= n; j++)
+    int j=1;
+    while (j<=n)
     {
-      cout << "* ";
+      cout<<"+ ";
+      j++;
     }
-    cout << endl;
+    cout<<endl;
+    i++;
   }
+  
   return 0;
 };
