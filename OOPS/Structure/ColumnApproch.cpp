@@ -37,48 +37,46 @@
 //         it.display();
 //     }
 // }
-#include<bits/stdc++.h>
+
+//2 Eg
+
+#include <bits/stdc++.h>
 using namespace std;
 class DiseaseTable
 {
-    private:
-    vector<vector<string>>symptoms;
-    vector<int>Fees;
-    vector<int>Waiting;
+private:
+    vector<vector<string>> symptoms;
+    vector<int> Fees;
+    vector<int> Waiting;
 
-    public:
-    DiseaseTable(vector<string>symptom,int a,int b){
+public:
+    DiseaseTable(vector<string> symptom, int a, int b)
+    {
         symptoms.push_back(symptom);
         Fees.push_back(a);
         Waiting.push_back(b);
-
     };
 
-   void display()
-   {
-    for (int i = 0; i <symptoms.size(); i++)
+    void display()
     {
-     for(auto it:symptoms[i])
-     {
-        cout<<it<<" ";
-     }
-     cout<<Fees[i]<<" "<<Waiting[i]<<"\n";
-
-      
+        for (int i = 0; i < symptoms.size(); i++)
+        {
+            for (auto it : symptoms[i])
+            {
+                cout << it << " ";
+            }
+            cout << Fees[i] << " " << Waiting[i] << "\n";
+        }
     }
-    
-   }
-
 };
 
 int main()
 {
-    vector<DiseaseTable>t={
-        {{"fever","cough"},50,20},
-        {{"headache","nausea"},60,15}
-    };
-    for(auto it:t)
+    vector<DiseaseTable> t = {
+        {{"fever", "cough"}, 50, 20},
+        {{"headache", "nausea"}, 60, 15}};
+    for (auto it : t)
     {
         it.display();
     }
-}
+},

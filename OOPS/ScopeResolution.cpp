@@ -23,11 +23,14 @@ void DestinationTable:: display() {
             cout << n << ",";
         }
         cout<<"]";
+        cout<<" ";
+        
         cout<<"[";
          for (auto a : activities) {
             cout << a << ",";
         }
         cout<<"]";
+        cout<<" ";
         cout <<cost<< "\n";
     }
 
