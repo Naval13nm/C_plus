@@ -11,9 +11,9 @@ int main()
     studentMarks["lux"] = 78;
 
     cout << "Student Marks:\n";
-    for (const auto &entry : studentMarks)
+    for (const auto firststu : studentMarks)
     {
-        cout << "Name: " << entry.first << ", Marks: " << entry.second << endl;
+        cout << "Name: " << firststu.first << " Marks: " << firststu.second << endl;
     }
 
     return 0;

@@ -1,0 +1,1 @@
+ // derobj.Base::show();
