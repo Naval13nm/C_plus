@@ -473,5 +473,144 @@ int main()
     // sort(v.begin(), v.end());
     // cout << v[v.size() / 2];
 
+    // PREFIX SUM
+    // Array givinng summ of previous sum know as prefix sum
+    //  vector<int>v={1,2,3,4,5};
+    //  vector<int>m;
+    //  int i=0;
+    //  int sum=0;
+
+    // // while(i<v.size()){
+    // //     sum=sum+v[i];
+    // //     m.push_back(sum);
+    // //     i++;
+    // // }
+    // for(auto x:v){
+    //     sum=sum+x;
+    //     m.push_back(sum);
+    // }
+    // for(auto x:m){
+    //     cout<<x;
+    // }
+
+    // sum of max subarray 2 loop ans
+
+    // vector<int> v = {-1, 2, 3, 4, -5, 6, 10};
+
+    // int SumOfMaxSubArray = INT_MIN;
+
+    // for (int i = 0; i < v.size(); i++)
+    // {
+    //       int sum = 0;
+    //         for (int j = i; j < v.size(); j++)
+    //         {
+    //             sum = sum + v[j];
+    //             SumOfMaxSubArray = max(sum, SumOfMaxSubArray);
+    //         }
+
+    // }
+    // cout<<SumOfMaxSubArray;
+
+    // same queestion using kadane algo
+
+    // vector<int> v = {-2,1,-3,4,-1,2,1,-5,4};
+
+    // int SumOfMaxSubArray = INT_MIN;
+
+    // int sum = 0;
+    // for (auto x : v)
+    // {
+    //     sum = max(x, sum + x);
+    //     SumOfMaxSubArray = max(SumOfMaxSubArray, sum);
+    // }
+
+    // cout << SumOfMaxSubArray;
+    
+
+    // 2149 leet postive negative series print
+
+    // vector<int> v = {3,1,-2,-5,2,-4};
+    // vector<int>a;
+    // vector<int>b;
+
+    // for(auto x : v){
+    //     if (x >= 0) {
+    //         a.push_back(x);
+    //     } else {
+    //         b.push_back(x);
+    //     }
+    // }
+
+    // vector<int> result;
+
+    // for (int i = 0; i < v.size(); i++) {
+    //     if (i % 2 == 0) {
+    //         result.push_back(a[i/2]);
+    //     } else {
+    //         result.push_back(b[i/2]);
+    //     }
+    // }
+
+    // for (auto x : result) {
+    //     cout << x << " ";
+    // }
+
+    // 1480 print arr in sum of prev element
+
+    //     class Solution {
+    // public:
+    //     vector<int> runningSum(vector<int>& nums) {
+    //         int sum=0;
+    //         vector<int>v;
+    //         for(auto x:nums){
+    //             sum=sum+x;
+    //             v.push_back(sum);
+    //         }
+    //         return v;
+    //     }
+
+
+
+
+    // concate two arr
+
+    //     class Solution {
+    // public:
+    //     vector<int> getConcatenation(vector<int>& nums) {
+    //      vector<int>b=nums;
+    //      vector<int>ans;
+
+    //      for (auto x:nums){
+    //         ans.push_back(x);
+    //      }
+    //      for (auto x:b){
+    //         ans.push_back(x);
+    //      }
+    //      return ans;
+    //     }
+    // };
+
+    
+
+
+    // 2011 string comparioisn 
+    
+//     class Solution {
+// public:
+//     int finalValueAfterOperations(vector<string>& operations) {
+//         int x=0;
+//         for(int i=0; i<operations.size(); i++){
+//             if(operations[i]=="++X"||operations[i]=="X++"){
+//                 x=x+1;
+//             }
+//             else{
+//                 x=x-1;
+//             }
+//         }
+//         return x;
+//     }
+
+// };
+
     return 0;
 }

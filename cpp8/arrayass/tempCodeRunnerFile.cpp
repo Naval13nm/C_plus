@@ -1,39 +1,15 @@
- vector<int> x = {1, 2, 3, 0};
-    vector<int> y = {3, 2, 1, 4, 5, 0};
-    vector<int> z = {};
-    vector<int> m;
+vector<int> v = {-1, 2, 3, 4, -5, 6, 10};
+    int sum = 0;
+    int SumOfMaxSubArray = INT_MIN;
 
-    if (x.size() >= y.size())
+    for (int i = 0; i < v.size(); i++)
     {
-        m = x;
-    }
-    else
-    {
-        m = y;
-    }
-
-    int i = 0;
-    while (i < x.size())
-    {
-        int j = i + 1;
-        while (j < y.size())
+        for (int i = 0; i < count; i++)
         {
-            if (y[j] == x[i])
+            for (int j = 0; j < v.size; j++)
             {
-                z.push_back(x[i]);
-                j++;
-            }
-            else
-            {
-                j++;
+                sum = sum + v[j];
+                ans = max(sum, ans);
             }
         }
-        i++;
     }
-    for (auto x : z)
-    {
-        cout << x;
-    }
-
-    return 0;
-}

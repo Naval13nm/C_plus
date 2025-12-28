@@ -1,24 +1,38 @@
+#include <iostream>
+#include <vector>
+#include <set>
+#include <map>
+#include <algorithm>
+using namespace std;
 
 int main()
 {
-    vector<int> v = {1, 1, 2, 2, 2, 2, 3};
 
-    for (int i = 0; i < v.size(); i++)
+    vector<int> n = {1, 2};
+
+    int smallest = INT_MAX;
+    int second = INT_MAX;
+    for (auto x : n)
     {
-        count = 0;
-        j = j + 1;
-
-        while (j < v.size())
+        if (x < smallest)
         {
-            if (v[j] == v[i])
-            {
-                count++;
-            }
-            j++;
+            second = smallest;
+            smallest = x;
         }
-
-        if (count > v.size() / 2)
+        else if (smallest < x && x < second)
         {
-            return count;
+            second = x;
         }
     }
+
+    if (second == INT_MAX)
+    {
+        cout << "not found";
+    }
+
+    else
+    {
+        cout << second;
+    }
+    return 0;
+}

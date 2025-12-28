@@ -36,36 +36,6 @@ int main()
 
     // return -1; // if item not found
 
-
-
-    //postive negative series print
-
-    vector<int> v = {3,1,-2,-5,2,-4}; 
-    vector<int>a;
-    vector<int>b;
-
-    for(auto x : v){
-        if (x >= 0) {
-            a.push_back(x);
-        } else {
-            b.push_back(x);  
-        }
-    }
-
-    vector<int> result; 
-
-    for (int i = 0; i < v.size(); i++) {
-        if (i % 2 == 0) {
-            result.push_back(a[i/2]);  
-        } else {
-            result.push_back(b[i/2]);
-        }
-    }
-
-    for (auto x : result) {
-        cout << x << " ";
-    }
-
     return 0;
 }
 
