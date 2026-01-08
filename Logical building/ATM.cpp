@@ -62,3 +62,41 @@ int main()
 
 	return 0;
 }
+
+
+
+
+// nt balance = 10000 ;
+//     cout << "Welcome to ATM"  << endl;
+//     cout << "ATM Services : " << endl ;
+//     cout << "1.WITHDRAW" << endl ;
+//     cout << "2.DEPOSITE" << endl ;
+//     cout << "3.BALANCE ENQUIRY" << endl ;
+//     int choice ;
+//     cout << "Enter Your Choice = " ;
+//     cin >> choice ;
+//     if( choice == 1 ){
+//         int amount;
+//         cout << "Enter Withdraw Amount = " ;
+//         cin >> amount ;
+//         if( amount > balance){
+//             cout << "Amount is Greater than Your Balance " << endl;
+//             cout << "AAUKAT MAIN DAAL AMOUNT" ;
+//             return 0 ;
+//         }
+//         else if( amount > 5000){
+//             cout << "Your Amount is More than 5000!!!!" ;
+//             return 0 ;
+//         }
+//         balance -= amount ;
+//         cout << "Your Balance = " << balance ;
+//     }
+//     else if( choice == 2 ) {
+//         int deposite ;
+//         cout << "Enter Deposite Amount = " ;
+//         cin >> deposite ;
+//         balance += deposite ;
+//         cout << "Your Balance = " << balance ;
+//     }
+//     else if( choice == 3) cout << "Your Balance = " << balance ;
+//     else cout << "Enter Valid Number!!" ;

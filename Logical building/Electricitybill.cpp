@@ -51,3 +51,32 @@ int main()
 
     return 0;
 }
+
+
+
+
+
+
+
+// int customer ;
+// 	cout << "Enter Number of Customer = " ;
+// 	cin >> customer ;
+// 	string name ;
+// 	int unit ;
+// 	for( int i = 1 ; i <= customer ; i++){
+	    
+// 	    cout << "Enter Customer Name = " ;
+// 	    cin >> name ;
+// 	    cout << "Enter Consumed Unit = " ;
+// 	    cin >> unit ;
+// 	    cout<<endl ;
+// 	    int amount ;
+// 	    if( unit <= 100 ) amount = unit * 5 ;
+// 	    else if( unit >= 101 && unit <=300 ) amount = unit * 7 ;
+// 	    else if(unit > 300 ) amount = unit * 10 ;
+// 	    if( amount > 2000) amount += (amount*5)/100 ;
+	    
+// 	    cout << "Customer Name = " << name << endl ;
+// 	    cout << "Unit Cunsomed = " << unit << endl ;
+// 	    cout << "Total Bill = " << amount << endl ;
+// 	}
