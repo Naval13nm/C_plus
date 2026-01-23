@@ -1,5 +1,4 @@
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -27,7 +26,7 @@ int main()
 
     // }
 
-    // q1 to count the number of zeroes and one in the 2d array
+    // q1 to count the number of zeroes and one in the 2d array//////
 
     // vector<vector<int>> v = {{1, 0, -1, 9, 0}, {-1, 3, 0, 6, 2}, {2, 4, -1, 4, -1}, {0, 1, 3, -21, 7}};
     // int count = 0;
@@ -67,7 +66,7 @@ int main()
     //     cout << endl;
     // }
 
-    // q3  find largest in row and retrun row of ;largest
+    // q3  find largest in row and retrun row of largest///////
 
     // vector<vector<int>> v = {{3, 9, 4}, {10, 6, 2}, {8, 14, 99}};
     // vector<int> ans;
@@ -90,8 +89,9 @@ int main()
     //     cout << x << endl;
     // }
 
-    // q4 search element in arr
-    // vector<vector<int>> v = {{3, 9, 4}, {10, 6, 2}, {8, 14, 99}};
+    // q4 search element in arr//////
+
+    // vector<vector<int>> v = {{1, 9, 3}, {10, 6, 3}, {8, 14, 3}};
     // int search = 999;
 
     // for (int i = 0; i < v.size(); i++)
@@ -109,7 +109,55 @@ int main()
     //     }
     // }
 
-    // q5 sum of each row and col
+    // search element ad print that index of last occuring in vector///
+
+    // vector<vector<int>> v = {{1, 9, 3}, {10, 6, 3}, {8, 14, 3}};
+    // int search = 3;
+    // int st=-1;
+    // int end=-1;
+
+    // for (int i = 0; i < v.size(); i++)
+    // {
+
+    //     for (int j = 0; j < v[0].size(); j++)
+    //     {
+    //         if (search == v[i][j])
+    //         {
+    //          st=i;
+    //          end=j;
+
+    //         }
+
+    //     }
+    // }
+
+    // cout<<st<<" "<<end;
+
+    // another using reverse//////
+
+    // vector<vector<int>> v = {{1, 9, 3}, {10, 6, 3}, {8, 14, 3}};
+    // reverse(v.begin(), v.end());
+    // for (auto &x : v)
+    // {
+    //     reverse(x.begin(), x.end());
+    // }
+    // int search = 3;
+
+    // for (int i = 0; i < v.size(); i++)
+    // {
+
+    //     for (int j = 0; j < v[0].size(); j++)
+    //     {
+    //         if (search == v[i][j])
+    //         {
+    //             cout << "v[" << i << "," << j << "]";
+
+    //             return 0;
+    //         }
+    //     }
+    // }
+
+    // q5 sum of each row and col/////
     //     vector<vector<int>> v = {{3, 9, 4}, {10, 6, 2}, {8, 14, 99}};
     //     int sum = 0;
     //    vector<vector<int>>ans;
@@ -193,6 +241,30 @@ int main()
     //         cout<<endl;
     //     }
 
+    // 4th method using swap only non diagonal elemnets are getting swapped
+    // vector<vector<int>> v = {{3, 9, 4}, {10, 6, 2}, {8, 14, 99}};
+
+    // for (int i = 0; i < v.size(); i++)
+    // {
+    //     for (int j = i + 1; j < v[i].size(); j++)
+    //     {
+    //         if (i != j)
+    //         {
+    //             swap(v[i][j], v[j][i]);
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+
+    // for (auto x : v)
+    // {
+    //     for (auto w : x)
+    //     {
+    //         cout << w << " ";
+    //     }
+    //     cout << endl;
+    // }
+
     // q find first 2  index in evry row
 
     // vector<vector<int>> v = {{3, 9, 4}, {10, 6, 2}, {8, 2, 99}};
@@ -248,12 +320,11 @@ int main()
     // cout << endl;
     // cout << Oddcount;
 
-
- // q find max row sum and col sum
+    // q find max row sum and col sum
     // vector<vector<int>> v = {{3, 988, 4}, {10, 6, 2}, {8, 2, 99}};
     // int RowSum = INT_MIN;
     // int ColSum = INT_MIN;
-// // for row
+    // // for row
     // for (int i = 0; i < v.size(); i++)
     // {
     //     int tempSum = 0;
@@ -283,8 +354,7 @@ int main()
     // cout << RowSum << endl;
     // cout << ColSum;
 
-
-// Q count elment greater then the given no
+    // Q count elment greater then the given no
     // vector<vector<int>> v = {{3, 988, 4}, {10, 6, 2}, {8, 2, 99}};
     // int GivenNo = 5;
     // int count = 0;
@@ -301,9 +371,7 @@ int main()
     // }
     // cout<<count;
 
-
-
- // q find no of negative and positive value in a mtx
+    // q find no of negative and positive value in a mtx
 
     // vector<vector<int>> v = {{3, -988, 4}, {-10, 6, 2}, {-8, 2, -99}};
     // int PositiveNoCount = 0;
@@ -331,9 +399,7 @@ int main()
     // cout << PositiveNoCount<<endl;
     // cout<<NegativeCount;
 
-
-
- // q prime no
+    // q prime no
 
     // vector<vector<int>> v = {{3, -988, 4}, {-10, 6, 2}, {-8, 2, -99}};
     // int PrimeCount = 0;
@@ -368,42 +434,40 @@ int main()
     // }
     // cout << PrimeCount << endl;
 
+    // q find min elemnets in each col and row
 
-// q find min elemnets in each col and row
-
- vector<vector<int>> v = {{3, 988, 4}, {10, 6, 2}, {8, 2, 99}};
-    int RowSum = INT_MAX;
-    int ColSum = INT_MAX;
-// for row
-    for (int i = 0; i < v.size(); i++)
-    {
-        int tempSum = 0;
-        for (int j = 0; j < v[0].size(); j++)
-        {
-            tempSum = tempSum + v[i][j];
-        }
-        if (RowSum > tempSum)
-        {
-            RowSum = tempSum;
-        }
-    }
+    //  vector<vector<int>> v = {{3, 988, 4}, {10, 6, 2}, {8, 2, 99}};
+    //     int RowSum = INT_MAX;
+    //     int ColSum = INT_MAX;
+    // for row
+    // for (int i = 0; i < v.size(); i++)
+    // {
+    //     int tempSum = 0;
+    //     for (int j = 0; j < v[0].size(); j++)
+    //     {
+    //         tempSum = tempSum + v[i][j];
+    //     }
+    //     if (RowSum > tempSum)
+    //     {
+    //         RowSum = tempSum;
+    //     }
+    // }
     // for col
-    for (int j = 0; j < v[0].size(); j++)
-    {
-        int tempSum = 0;
-        for (int i = 0; i < v.size(); i++)
-        {
-            tempSum = tempSum + v[i][j];
-        }
-        if (ColSum > tempSum)
-        {
-            ColSum = tempSum;
-        }
-    }
+    // for (int j = 0; j < v[0].size(); j++)
+    // {
+    //     int tempSum = 0;
+    //     for (int i = 0; i < v.size(); i++)
+    //     {
+    //         tempSum = tempSum + v[i][j];
+    //     }
+    //     if (ColSum > tempSum)
+    //     {
+    //         ColSum = tempSum;
+    //     }
+    // }
 
-    cout << RowSum << endl;
-    cout << ColSum;
-
+    // cout << RowSum << endl;
+    // cout << ColSum;
 
     return 0;
 }

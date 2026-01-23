@@ -1,26 +1,26 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// int main()
-// {
-//     vector<int> v = {10, 5, 1, 2, 8, 9};
+int main()
+{
+    vector<int> v = {10, 5, 1, 2, 8, 9};
 
-//     int temp = v[0];
+    int temp = v[0];
 
-//     for (int i = 0; i < v.size() - 1; i++)
-//     {
-//         v[i] = v[i + 1];
-//     }
+    for (int i = 0; i < v.size() - 1; i++)
+    {
+        v[i] = v[i + 1];
+    }
 
-//     v[v.size() - 1] = temp;
+    v[v.size() - 1] = temp;
 
-//     for (auto x : v)
-//     {
-//         cout << x << " ";
-//     }
+    for (auto x : v)
+    {
+        cout << x << " ";
+    }
 
-//     return 0;
-// }
+    return 0;
+}
 
 
 
@@ -91,22 +91,22 @@ using namespace std;
 
 
 
-int main()
-{
-    vector<int> v = {10, 5, 1, 2, 8, 9};
+// int main()
+// {
+//     vector<int> v = {10, 5, 1, 2, 8, 9};
 
-    int n;
-    cout<<"Enter No of rotations or shifting postions"<<endl;
-    cin>>n;
-    n = n % v.size();
+//     int n;
+//     cout<<"Enter No of rotations or shifting postions"<<endl;
+//     cin>>n;
+//     n = n % v.size();
 
-    rotate(v.begin(), v.begin() + n, v.end());
+//     rotate(v.begin(), v.begin() + n, v.end());
 
 
-    for (auto x : v)
-    {
-        cout << x << " ";
-    }
+//     for (auto x : v)
+//     {
+//         cout << x << " ";
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
